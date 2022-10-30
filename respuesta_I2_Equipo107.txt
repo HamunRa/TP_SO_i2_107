@@ -4,10 +4,26 @@ Leandro Ezequiel Osella
 
 a-¿Como actualizo mi repositorio, al estado que esté el repo que hice FORK?
 Desde la pagina, vas a tu repositorio forkeado y te saldria la opcion Sync fork, al apretarlo se te actualiza el repositorio.
+
 b-¿Puede ALFA actualizar su FORK al estado del fork de GAMMA?
-Si, se puede mediante comandos y desde la pagia con un pull request.
+Si, se puede mediante comandos y desde la pagina con un pull request.
+
 c-¿Puede GAMMA actualizar su FORK al estado del fork de ALFA?
+Al igual que en el caso anterior, si, pueden realizarlo mediante comandos o con un pull request desde la pagina de github.
+
 d-¿Los datos que tenía en mi repositorio , editados por mi, se pierden si quiero actualizar
 el fork?
+Si, al actualizar un repositorio se sobreescribiran los archivos y su contenido, en nuestro caso, al realizar la actualizacion mediante pull request seleccionamos los archivos que deseamos actualizar y el resto quedaron intactos con su respectivo contenido.
+
 e- realizar un listado, paso a paso ,de los comando necesarios para resolver este TP por
 orden de ejecución de los mismos junto con los apellidos y nombre de los alumnos.
+
+1er Paso: Beta crea el repositorio y un archivo llamado "fork.txt".
+2do Paso: Gamma forkea el repositorio de Beta y, en una carpeta de su computadora, usa el comando "git clone" junto con la ruta del repositorio.
+3er Paso: Gamma usa el "git add ." para despues utilizar "git commit -m 'texto'", para agregar un commit y actualizar los datos. Luego usa el "git push" para que se carguen en el repositorio.
+4to Paso: Alfa forkea el repositorio de Beta y hace los mismos pasos (2do y 3er) que Gamma. Utilizando los mismos comandos.
+5to Paso: Beta descarga su propio repositorio en forma local con el "git clone" y la ruta de su repositorio. Crea el archivo nuevoDato.txt, hace un commit(git add . --> git commit -m 'texto') y hace el "git push" para actualizar el repositorio.
+6to Paso: Gamma y Alfa actualizan su repositorio al estado en que lo dejo Beta mediante el 'Sync Fork'.
+7mo Paso: Beta crea el archivo respuesta_I2_Equipo107.txt para subir las respuestas.
+8vo Paso: Para que Alfa actualice su fork al estado de Gamma, se ultiliza el pull request y vicerversa, para que Gamma actualice su fork al estado de Alfa.
+
